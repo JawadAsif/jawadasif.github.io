@@ -2,37 +2,22 @@ $(document).ready(function(){
 
   // MODAL
   var modalText = {
-    roambi: {
-      title: 'Roambi.com',
-      tag: 'BUSINESS ANALYTICS.',
-      detail: 'Roambi provides analytics, reporting, and business intelligence for companies to use on the go. A Wordpress hosted site written in PHP and Javascript with Hubspot Integration.',
-      link: 'http://www.roambi.com'
+    ludo: {
+      title: 'LocoLudo',
+      tag: 'Ludo game',
+      detail: 'A multiplayer ludo game with beautiful UI',
     },
-    walker: {
-      title: 'WalkerTracker',
-      tag: 'PERFORMANCE METRICS.',
-      detail: 'Walker Tracker offers goal management, fitness tracking, and team competitions to companies for internal use. A Ruby on Rails and Javascript companion site for the Walker Tracker App. Features visual metrics and gamified progression system.',
+    bubbletone: {
+      title: 'BubbleTone',
+      tag: 'Real-time communication. Anytime and anywhere.',
+      detail: 'BubbleTone is a free/paid calling and messaging platform that helps you stay connected without the need for high-speed internet. It has many features like voice and video call in high quality over a secure chanel, call recording, sending SMS, group messages in "Private" and "Open" modes, sending a variety of types of messages: voice, photo, video, text, smiles, gif, contacts, location, files etc., sending messages to the future and burning messages, conference Call, hides the message and messages are protected end-to-end encryption, and much more.',
+      link: 'https://itunes.apple.com/us/app/bubbletone/id1298142945'
     },
-    powur: {
-      title: 'Powur.com',
-      tag: 'MULTI-LEVEL MARKETING.',
-      detail: 'Powur is a multi-level marketing platform for lead generation, recruitment, and team building. Built with Ruby on Rails and Angular-UI. Makes use of Angular-material for front-end visuals. Features complex user tree heiarchy and commission system.',
-      link: 'http://www.powur.com/with/42'
-    },
-    mystand: {
-      title: 'MyStand',
-      tag: 'CROWD-FUNDED CHARITY.',
-      detail: 'MyStand is a crowd-funding, media sharing website, that has you donating actions instead of money out of your pocket. Single page App built with Node.js on Sails and Angular 2.0. Features social media sharing and large scale crowd-funding.',
-    },
-    never: {
-      title: 'NeverSurrender',
-      tag: 'ALS AWARENESS.',
-      detail: 'NeverSurrender is a platform for the new ALS foundation mobile app in hopes to raise awareness and research funding to fight ALS. Pure JavaScript marketing site to promote the new ALS NeverSurrender app.',
-    },
-    themall: {
-      title: 'The Mall',
-      tag: 'PEER GUIDED SHOPPING.',
-      detail: 'The Mall is a place to follow the latest fashion purchases of your friends and favorite celebrities. Built with Node.js and Handlebars. Features the ability to import thousands of top brands products into one shopping site.',
+    babylon: {
+      title: 'MobiGap',
+      tag: 'Real-time communication. Anytime and anywhere.',
+      detail: 'MobiGap is a special program designed to communicate and make voice / video calls within the application, as well as sharing media files between users. Registration in the MobiGap application is made only from the Babilon Mobile number, which, after installation, is automatically synchronized with the contact list of your phone and determines which of your contacts already has MobiGap installed. ',
+      link: 'https://itunes.apple.com/tm/app/mobi%D0%B3%D0%B0%D0%BF/id1347148941'
     }
   };
 
