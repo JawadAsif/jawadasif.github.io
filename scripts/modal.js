@@ -23,6 +23,12 @@ $(document).ready(function(){
       title: 'Unbeatable Tic-Tac-Toe',
       tag: 'Unbeatable Tic-Tac-Toe',
       detail: 'A human versus AI Tic-Tac-Toe game',
+    },
+    salam: {
+      title: 'Salam!',
+      tag: 'FREE COMMUNICATION WORLDWIDE ',
+      detail: 'WITH the Salam app! You can exchange multimedia files for free: photos, videos, documents, voice messages with relatives anywhere in the world. Communicate via the Internet without a subscription fee and any restrictions. For the application Salam! need any internet connection or wifi. In this case, the rates of your operator may apply.All Salam chats! protected by end-to-end encryption technology, which ensures complete security and confidentiality of correspondence. No one can decrypt and read the data during its transmission. Say goodbye to typos. Salam! will help to correct messages not only in groups, but also in ordinary private chat rooms.',
+      link: 'https://appadvice.com/game/app/salam/1329656277',
     }
   };
 
