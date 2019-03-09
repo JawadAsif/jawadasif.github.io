@@ -18,6 +18,11 @@ $(document).ready(function(){
       tag: 'Real-time communication. Anytime and anywhere.',
       detail: 'MobiGap is a special program designed to communicate and make voice / video calls within the application, as well as sharing media files between users. Registration in the MobiGap application is made only from the Babilon Mobile number, which, after installation, is automatically synchronized with the contact list of your phone and determines which of your contacts already has MobiGap installed. ',
       link: 'https://itunes.apple.com/tm/app/mobi%D0%B3%D0%B0%D0%BF/id1347148941'
+    },
+    tic: {
+      title: 'Unbeatable Tic-Tac-Toe',
+      tag: 'Unbeatable Tic-Tac-Toe',
+      detail: 'A human versus AI Tic-Tac-Toe game',
     }
   };
 
