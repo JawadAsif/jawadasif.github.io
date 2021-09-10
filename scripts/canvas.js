@@ -13,7 +13,12 @@ function floatySpace() {
   var pts = [];
   var center = space.size.$divide(1.8);
   // var angle = -(window.innerWidth * 0.5);
-  var angle = -800;
+  var angle;
+  if (space.size.x > space.size.y) {
+    angle = -800;
+  } else {
+    angle = -300;
+  }
   var count = window.innerWidth * 0.05;
   if (count > 100) count = 100;
   var line = new Line(0, angle).to(space.size.x, 0);
@@ -36,7 +41,11 @@ function floatySpace() {
         var pt = pts[i];
 
         // pt.rotate2D( Const.one_degree / 20, center);
-        pt.moveBy(Math.cos(angle) * 0.3, - Math.sin(angle) * 0.3);
+        if (space.size.x > space.size.y) {
+          pt.moveBy(Math.cos(angle) * 0.3, - Math.sin(angle) * 0.3);
+        } else {
+          pt.moveBy(Math.cos(angle * 2) * 0.3, Math.sin(angle) * 0.3);
+        }
         form.stroke(false).fill(colors[i % 3]).point(pt, 1);
 
         // get line from pt to the mouse line
