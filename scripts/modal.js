@@ -35,7 +35,13 @@ $(document).ready(function () {
       tag: 'QR-code Scanner',
       detail: 'The application is made to receive and log answer scripts of public examinations taken by Bangladesh Madrasah Education Board. This application works by scanning QR code that is located on the top of answer-scripts\' bundle and logs the data. Then, these data are collected from the devices.',
       link: 'https://play.google.com/store/apps/details?id=com.singularsofts.e_answer_script_receive',
-    }
+    },
+    auto_message_mac: {
+      title: 'Discord Level Up (Auto Message)',
+      tag: 'Mac Application for Auto messaging',
+      detail: 'With \'Discord Level Up (Auto Message), you can easily level up in discord server. You can also send scheduled/auto message in any messenger application.',
+      link: 'https://sourceforge.net/projects/discord-level-up-auto-message/',
+    },
   };
 
   $('#gallery .button').on('click', function () {
