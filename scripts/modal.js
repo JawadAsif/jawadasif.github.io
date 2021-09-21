@@ -42,6 +42,12 @@ $(document).ready(function () {
       detail: 'With \'Discord Level Up (Auto Message), you can easily level up in discord server. You can also send scheduled/auto message in any messenger application.',
       link: 'https://sourceforge.net/projects/discord-level-up-auto-message/',
     },
+    auto_message_windows: {
+      title: 'Discord Level Up (Auto Message)',
+      tag: 'Windows Application for Auto messaging',
+      detail: 'With \'Discord Level Up (Auto Message), you can easily level up in discord server. You can also send scheduled/auto message in any messenger application.',
+      link: 'https://sourceforge.net/projects/discord-level-up-auto-msg-exe/',
+    },
   };
 
   $('#gallery .button').on('click', function () {
