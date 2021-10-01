@@ -48,6 +48,12 @@ $(document).ready(function () {
       detail: 'This app authenticates the application of official SIM withdrawal application of an institution related to the Education Boards of Bangladesh. ',
       link: 'https://play.google.com/store/apps/details?id=com.bmeb.allboard.sim_issue',
     },
+    auto_message_windows: {
+      title: 'Discord Level Up (Auto Message)',
+      tag: 'Windows Application for Auto messaging',
+      detail: 'With \'Discord Level Up (Auto Message), you can easily level up in discord server. You can also send scheduled/auto message in any messenger application.',
+      link: 'https://sourceforge.net/projects/discord-level-up-auto-msg-exe/',
+    },
   };
 
   $('#gallery .button').on('click', function () {
