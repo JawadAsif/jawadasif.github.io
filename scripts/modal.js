@@ -43,7 +43,7 @@ $(document).ready(function () {
       link: 'https://sourceforge.net/projects/discord-level-up-auto-message/',
     },
     board_sim: {
-      title: 'Board Sim',
+      title: 'EIIN SIM',
       tag: 'QR-code Scanner',
       detail: 'This app authenticates the application of official SIM withdrawal application of an institution related to the Education Boards of Bangladesh. ',
       link: 'https://play.google.com/store/apps/details?id=com.bmeb.allboard.sim_issue',
