@@ -24,7 +24,7 @@ function floatySpace() {
   var line = new Line(0, angle).to(space.size.x, 0);
   var mouse = center.clone();
 
-  var r = Math.min(space.size.x, space.size.y) * 1;
+  var r = Math.min(space.size.x, space.size.y) * 1.5;
   for (var i = 0; i < count; i++) {
     var p = new Vector(Math.random() * r, Math.random() * r);
     // p.moveBy(center).rotate2D(i * Math.PI / count, center);
@@ -52,7 +52,7 @@ function floatySpace() {
         var ln = new Line(pt).to(line.getPerpendicularFromPoint(pt));
 
         // opacity of line derived from distance to the line
-        var opacity = Math.min(0.8, 1 - Math.abs(line.getDistanceFromPoint(pt)) / r);
+        // var opacity = Math.min(0.8, 1 - Math.abs(line.getDistanceFromPoint(pt)) / r);
         var distFromMouse = Math.abs(ln.getDistanceFromPoint(mouse))
 
         if (distFromMouse < 50) {
