@@ -1,4 +1,4 @@
 temp.txt
 node_modules
 styles/**/*.css*
-all.js*
+/all.js*
