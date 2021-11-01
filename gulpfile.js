@@ -29,12 +29,12 @@ const files = {
 
 function copyResourcesTask() {
     return src(files.copyFilePaths, { base: './' })
-        .pipe(dest('dist'));
+        .pipe(dest('docs'));
 }
 
 function copyHtmlTask() {
     return src('index.html', { base: './' })
-        .pipe(dest('dist'));
+        .pipe(dest('docs'));
 }
 
 // function deleteTask() {
@@ -46,7 +46,7 @@ function scssTaskDist() {
     return src(files.scssPath, { sourcemaps: false, base: './' }) // set source and turn on sourcemaps
         .pipe(sass()) // compile SCSS to CSS
         .pipe(postcss([autoprefixer(), cssnano()])) // PostCSS plugins
-        .pipe(dest('dist')); // put final CSS in dist folder with sourcemap
+        .pipe(dest('docs')); // put final CSS in dist folder with sourcemap
 }
 
 function scssTask() {
@@ -67,7 +67,7 @@ function jsTaskDist() {
     )
         .pipe(concat('all.js'))
         .pipe(terser())
-        .pipe(dest('dist'));
+        .pipe(dest('docs'));
 }
 
 function jsTask() {
@@ -87,7 +87,7 @@ function jsTask() {
 // Cachebust
 function cacheBustTaskDist() {
     var cbString = new Date().getTime();
-    return src('dist/index.html', { base: './' })
+    return src('docs/index.html', { base: './' })
         .pipe(replace(/cb=\d+/g, 'cb=' + cbString))
         .pipe(dest('.'));
 }
@@ -104,7 +104,7 @@ function browserSyncServeDist(cb) {
     // initializes browsersync server
     browsersync.init({
         server: {
-            baseDir: 'dist',
+            baseDir: 'docs',
         },
         notify: {
             styles: {
