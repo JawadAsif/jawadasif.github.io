@@ -30,7 +30,11 @@ $secondary-dark: #00eff1;
 }
 
 @keyframes fadeIn {
-  100% { opacity: 1 };
+  100% {
+    opacity: 1
+  }
+
+  ;
 }
 
 @keyframes flipInX {
@@ -68,13 +72,16 @@ $secondary-dark: #00eff1;
 }
 
 @keyframes popDown {
-  0% { transform: translateY(-100px) }
+  0% {
+    transform: translateY(-100px)
+  }
 }
 
 @keyframes slideUp {
   0% {
     transform: translateY(300px)
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -85,6 +92,7 @@ $secondary-dark: #00eff1;
   0% {
     transform: translateY(-300px)
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -97,6 +105,7 @@ $secondary-dark: #00eff1;
     opacity: 0;
     transform: translateX(-300px)
   }
+
   100% {
     opacity: 1;
     transform: translateX(0)
@@ -108,6 +117,7 @@ $secondary-dark: #00eff1;
     opacity: 0;
     transform: translateX(300px)
   }
+
   100% {
     opacity: 1;
     transform: translateX(0)
@@ -118,10 +128,12 @@ $secondary-dark: #00eff1;
   49% {
     transform: translateY(100%);
   }
+
   50% {
     opacity: 0;
     transform: translateY(-100%);
   }
+
   51% {
     opacity: 1;
   }
@@ -131,13 +143,16 @@ $secondary-dark: #00eff1;
   0% {
     transform: scale(0);
   }
+
   60% {
     opacity: 1;
     transform: scale(1.05);
   }
+
   80% {
     transform: scale(0.95);
   }
+
   100% {
     transform: scale(1);
     opacity: 1;
@@ -155,7 +170,7 @@ body {
   font-family: 'Raleway';
   text-align: center;
   margin: 0px;
-  font-size: 8pt;
+  font-size: 10pt;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
@@ -190,6 +205,7 @@ body {
   font-size: 13pt;
   transition: all .5s;
   cursor: pointer;
+
   &:hover {
     background-color: $primary;
     border-color: $primary;
@@ -297,6 +313,7 @@ nav {
 
   &.fixed {
     @include pos($pos: fixed, $top: 0, $bottom: inherit, $left: 0);
+
     &.desk {
       animation: popDown .5s;
     }
@@ -320,11 +337,13 @@ nav {
       &:first-child {
         padding: 25px 20px 12px 20px;
       }
+
       padding: 12px 20px;
       font-size: 12pt;
       cursor: pointer;
       transition: color .5s;
       text-transform: uppercase;
+
       &:hover {
         color: $secondary;
       }
@@ -373,7 +392,8 @@ nav {
 }
 
 
-.mdi-chevron-left, .mdi-chevron-right {
+.mdi-chevron-left,
+.mdi-chevron-right {
   cursor: pointer;
   position: absolute;
   bottom: 0;
@@ -385,8 +405,13 @@ nav {
   color: #fff;
 }
 
-.mdi-chevron-left { left: 0 }
-.mdi-chevron-right { right: 0 }
+.mdi-chevron-left {
+  left: 0
+}
+
+.mdi-chevron-right {
+  right: 0
+}
 
 .transition {
   transition: .7s;
@@ -394,17 +419,19 @@ nav {
 
 // MODAL
 .modal-wrap {
-  height: 100vh; width: 100vw;
+  height: 100vh;
+  width: 100vw;
   position: fixed;
   pointer-events: none;
   z-index: 100;
 
   .mask {
-    height: 100%; width: 100%;
+    height: 100%;
+    width: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0, 0, 0, 0.5);
     opacity: 0;
     transition: opacity .3s;
   }
@@ -451,7 +478,7 @@ nav {
     font-weight: 300;
     color: #c0c0c0;
     font-family: 'Raleway-bold';
-    border-bottom: 1px solid rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     padding-bottom: 15px;
     font-size: 8pt;
   }
@@ -495,15 +522,17 @@ nav {
   }
 
   .carousel {
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.25);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.25);
   }
 
   &.visible {
     pointer-events: initial;
+
     .modal {
       transform: scale(1);
       opacity: 1;
     }
+
     .mask {
       opacity: 1;
     }
@@ -544,6 +573,7 @@ section {
 
     .hexagon {
       transition: transform .9s ease-in-out;
+
       &:hover {
         transform: rotate(540deg);
       }
@@ -667,6 +697,7 @@ section {
 
       &.secondary {
         background-color: $secondary-dark;
+
         .tag {
           background-color: $secondary;
         }
@@ -714,6 +745,7 @@ section {
         @include pos($top: 0, $left: -30px, $bottom: 0);
         margin: auto 0;
         transition: left .5s ease-in-out;
+
         .filter {
           color: #fff;
         }
@@ -728,7 +760,8 @@ section {
     #gallery {
       margin: 20px 0;
 
-      .text, .button {
+      .text,
+      .button {
         z-index: 2;
         text-align: center;
         opacity: 0;
@@ -782,7 +815,9 @@ section {
         }
 
         &:hover {
-          .card { opacity: 0 }
+          .card {
+            opacity: 0
+          }
 
           .text {
             opacity: 1;
@@ -802,15 +837,18 @@ section {
     }
   }
 
-  .flex-50-gt-sm { display: block;}
+  .flex-50-gt-sm {
+    display: block;
+  }
 
 
   //BLOG
   &:nth-of-type(4) {
-    padding: 130px 0 100px 0;
+    padding: 0px 0 0px 0;
     text-align: left;
 
-    .flex.row-gt-sm, .flex.wrap {
+    .flex.row-gt-sm,
+    .flex.wrap {
       align-items: flex-start;
     }
 
@@ -889,11 +927,13 @@ section {
     .header {
       color: #fff;
     }
+
     .header-bar {
       margin: 25px 0 40px 0;
       background: #fff;
       width: 110px;
     }
+
     .highlight {
       font-weight: 600;
       color: $primary;
@@ -910,7 +950,9 @@ section {
       min-width: 95%;
     }
 
-    input[type="text"], input[type="email"], textarea {
+    input[type="text"],
+    input[type="email"],
+    textarea {
       display: block;
       width: 100%;
       box-sizing: border-box;
@@ -992,6 +1034,7 @@ footer {
     margin: 0 auto;
     cursor: pointer;
     transition: background .5s;
+
     &:hover {
       background: $secondary-light;
     }
@@ -1023,7 +1066,7 @@ footer {
 
     .icon:hover {
       background: $primary;
-      box-shadow: 0 0 0 3px rgba(4,94,201,0.1);
+      box-shadow: 0 0 0 3px rgba(4, 94, 201, 0.1);
       transform: scale(0.9);
 
       .mdi {
@@ -1083,14 +1126,17 @@ footer {
   }
 
   .hex-wrap {
-    height: 100px; width: 100px
+    height: 100px;
+    width: 100px
   }
 
-  .slide, .carousel-wrap {
+  .slide,
+  .carousel-wrap {
     height: 450px;
   }
 
-  .mdi-chevron-left, .mdi-chevron-right {
+  .mdi-chevron-left,
+  .mdi-chevron-right {
     font-size: 25pt !important;
   }
 
@@ -1099,6 +1145,7 @@ footer {
       top: -6vh;
       height: initial;
     }
+
     .info-box {
       padding: 35px 60px 90px 25px;
     }
@@ -1143,6 +1190,7 @@ footer {
         &:first-child {
           padding: 0;
         }
+
         margin: 0 20px;
         padding: initial;
         font-size: initial;
@@ -1185,7 +1233,8 @@ footer {
         .label {
           margin: 15px 0 5px 0;
         }
-        > div {
+
+        >div {
           padding: 0 15px;
         }
       }
@@ -1196,7 +1245,7 @@ footer {
 
       .skills-wrapper {
 
-        > .flex:first-child {
+        >.flex:first-child {
           padding: 0 50px 0 50px;
         }
 
@@ -1250,7 +1299,8 @@ footer {
 
 
     &:nth-of-type(4) {
-      padding: 130px 0 180px 0;
+      padding: 0px 0 0px 0;
+
       .label {
         line-height: 22pt;
         font-size: 16pt;
@@ -1295,9 +1345,10 @@ footer {
 
   .animated.waypoint#gallery {
     opacity: 1;
+
     .mix {
       @for $i from 1 through 6 {
-        &:nth-child(#{$i}) > div {
+        &:nth-child(#{$i})>div {
           opacity: 0;
           animation: slideUp .75s #{$i * 0.1}s ease both;
         }
@@ -1309,21 +1360,27 @@ footer {
     &.slide-up {
       animation: slideUp .75s ease both;
     }
+
     &.slide-down {
       animation: slideDown .75s ease both;
     }
+
     &.slide-in-left {
       animation: slideInLeft .75s ease both;
     }
+
     &.slide-in-right {
       animation: slideInRight .75s ease both;
     }
+
     &.flip-in-x {
       animation: flipInX .75s ease both;
     }
+
     &.fade-in {
       animation: fadeIn .75s ease both;
     }
+
     &.pop-in {
       animation: popIn 1s both;
     }
@@ -1353,6 +1410,7 @@ footer {
 
 
   section {
+
     // ABOUT
     &:nth-of-type(2) {
       .bars-wrap {
@@ -1382,6 +1440,7 @@ footer {
       #gallery .mix .card {
         width: 390px;
       }
+
       .filter {
         font-size: 13pt;
         padding: 0 40px;
