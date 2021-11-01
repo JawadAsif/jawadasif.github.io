@@ -54,6 +54,12 @@ $(document).ready(function () {
       detail: 'With \'Discord Level Up (Auto Message), you can easily level up in discord server. You can also send scheduled/auto message in any messenger application.',
       link: 'https://sourceforge.net/projects/discord-level-up-auto-msg-exe/',
     },
+    islamic_times: {
+      title: 'Islamic Times',
+      tag: 'Progressive Web Application on Islamic Times',
+      detail: 'You can easily find prayer times and hijri date on islamic times PWA.',
+      link: 'https://islamictimes.pages.dev',
+    },
   };
 
   $('#gallery .button').on('click', function () {
