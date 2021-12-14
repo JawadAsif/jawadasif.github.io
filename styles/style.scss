@@ -708,6 +708,32 @@ section {
         padding: 0 15px 0 0;
       }
     }
+
+    .button {
+      padding: 5px 10px;
+      border: 1px solid $primary;
+      box-sizing: inherit;
+      display: inline-block;
+      font-size: 10pt;
+      transition: all .5s;
+      margin-top: 20px;
+      cursor: pointer;
+
+      a {
+        color: #444649;
+        font-weight: 400;
+      }
+
+      &:hover {
+        background-color: $primary;
+        border-color: $primary;
+
+        a {
+          color: #fff;
+        }
+      }
+    }
+
   }
 
   //PORTFOLIO
@@ -1273,6 +1299,31 @@ footer {
 
       .hexagon i {
         font-size: 40pt;
+      }
+
+      .button {
+        padding: 10px 20px;
+        border: 2px solid $primary;
+        box-sizing: inherit;
+        display: inline-block;
+        font-size: 13pt;
+        transition: all .5s;
+        margin-top: 20px;
+        cursor: pointer;
+
+        a.highlight {
+          color: #444649;
+          font-weight: 400;
+        }
+
+        &:hover {
+          background-color: $primary;
+          border-color: $primary;
+
+          a {
+            color: #fff;
+          }
+        }
       }
     }
 
