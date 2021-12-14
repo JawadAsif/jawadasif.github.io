@@ -60,6 +60,12 @@ $(document).ready(function () {
       detail: 'You can easily find prayer times and hijri date on islamic times PWA.',
       link: 'https://islamictimes.pages.dev',
     },
+    blog: {
+      title: 'JawadAsif\'s Scribbles',
+      tag: "NextJS GraphQL",
+      detail: 'My blog built using NextJS and GraphQL',
+      link: 'https://jawadasif-scribbles.vercel.app/',
+    },
   };
 
   $('#gallery .button').on('click', function () {
