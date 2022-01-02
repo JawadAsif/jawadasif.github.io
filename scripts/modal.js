@@ -64,7 +64,7 @@ $(document).ready(function () {
       title: 'JawadAsif\'s Scribbles',
       tag: "NextJS GraphQL",
       detail: 'My blog built using NextJS and GraphQL',
-      link: 'https://jawadasif-scribbles.vercel.app/',
+      link: 'https://blog.jawadasif.vercel.app/',
     },
   };
 
